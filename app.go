@@ -10,5 +10,10 @@ func main() {
 	fmt.Scan(&firstNum)
 	fmt.Print("enter the second number: ")
 	fmt.Scan(&secondNum)
-	fmt.Println(firstNum * secondNum)
+	calculatedValue := calculate(firstNum, secondNum)
+	fmt.Println("the calculated value is", calculatedValue)
+}
+
+func calculate(firstNum, secondNum int) int {
+	return firstNum * secondNum
 }
